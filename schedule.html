@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Course: CIS133DA
+        Section: # 27487
+        Lesson: 9
+    -->
+    <title>Schedule an Appointment</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eris S.">
+    <meta name="description" content="Review Computer Systems Inc. service pricing and request an appointment.">
+    <meta name="keywords" content="computer services, appointment, pricing, computer repair, software, business support">
+    <link rel="stylesheet" href="css/default_style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Computer Systems Inc.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="right"><a class="active" href="#">Book an Appointment</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Pricing List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">User Type</th>
+                        <th scope="col">Services</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="7">Home &amp; Business</th>
+                        <td>Data recovery &amp; transfer</td>
+                        <td rowspan="2">$40 fixed price</td>
+                    </tr>
+                    <tr>
+                        <td>Software installation</td>
+                    </tr>
+                    <tr>
+                        <td>Computer repair</td>
+                        <td rowspan="2">$60 per hour + hardware costs</td>
+                    </tr>
+                    <tr>
+                        <td>PC setup and connection</td>
+                    </tr>
+                    <tr>
+                        <td>Computer diagnosis</td>
+                        <td rowspan="2">$60 per hour</td>
+                    </tr>
+                    <tr>
+                        <td>Wireless/Wired network setup</td>
+                    </tr>
+                    <tr>
+                        <td>Memory (RAM) upgrade</td>
+                        <td>$90 fixed price</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Business</th>
+                        <td>24/7 Support Hotline</td>
+                        <td>Starting at $300 per month</td>
+                    </tr>
+                    <tr>
+                        <td>Web development</td>
+                        <td>Starting at $400</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly software maintenance</td>
+                        <td>$40 per hour</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Project Request Form</h2>
+            <p>Computer Systems Inc. can email or call you today to schedule an appointment or project request. Submit the following form and we will get back to you promptly.</p>
+            <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <p>How would you prefer we get back to you?</p>
+                <label><input type="checkbox" name="contact-preference" value="phone"> Phone</label>
+                <label><input type="checkbox" name="contact-preference" value="email"> Email</label>
+
+                <p>Are you requesting for your home or business?</p>
+                <label><input type="radio" name="user-type" value="individual-home"> Individual/Home</label>
+                <label><input type="radio" name="user-type" value="business"> Business</label>
+
+                <label for="additional-comments">Additional Comments</label>
+                <textarea id="additional-comments" name="additional-comments"></textarea>
+                <br>
+                <button type="reset">Reset form</button>
+                <button type="submit">Submit Form</button>
+            </form>
+        </main>
+        <footer>
+            <p><small>Photo by <a href="https://unsplash.com/@clintbustrillos">Clint Bustrillos</a><br>Copyright by MEID
+                    &copy; 2023</small></p>
+        </footer>
+    </div>
+</body>
+
+</html>
